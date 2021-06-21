@@ -27,24 +27,24 @@ const routes = [
   {
     path: '/login',
     name: 'login',
-    component: import('@/views/Login.vue'),
+    component: () => import('@/views/Login.vue'),
   },
   /** 後台路由 */
   {
     path: '/backend',
     name: 'Backend',
-    component: import('@/views/Backend.vue'),
+    component: () => import('@/views/Backend.vue'),
     // 巢狀路由
     children: [
       {
         path: 'products',
-        component: import('@/views/backend/Products.vue'),
+        component: () => import('@/views/backend/Products.vue'),
       },
     ],
   },
   {
     path: '/:pathMatch(.*)*',
-    component: import('@/views/NotFound.vue'),
+    component: () => import('@/views/NotFound.vue'),
   },
 ];
 
