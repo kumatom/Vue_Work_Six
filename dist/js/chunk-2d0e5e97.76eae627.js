@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0e5e97"],{9703:function(e,t,n){"use strict";n.r(t);var c=n("7a23"),s={class:"d-flex justify-content-center"};function o(e,t){var n=Object(c["x"])("Alert");return Object(c["s"])(),Object(c["d"])("div",s,[Object(c["g"])(n,{customClass:"alert-danger",content:"~ 糟糕! 404 Not Found Page ~"})])}const r={};r.render=o;t["default"]=r}}]);
+//# sourceMappingURL=chunk-2d0e5e97.76eae627.js.map
