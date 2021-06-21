@@ -4,15 +4,15 @@ import { createRouter, createWebHashHistory } from 'vue-router';
 const routes = [
   {
     path: '/',
-    component: import('@/views/Index.vue'),
+    component: () => import('@/views/Index.vue'),
     children: [
       {
         path: 'products',
-        component: import('@/views/Products.vue'),
+        component: () => import('@/views/Products.vue'),
       },
       {
         path: 'product/:id',
-        component: import('@/views/Product.vue'),
+        component: () => import('@/views/Product.vue'),
       },
     ],
   },
