@@ -1,4 +1,4 @@
-# vue_work
+# vue-work-six
 
 ## Project setup
 ```
