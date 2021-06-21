@@ -69,6 +69,9 @@
 </style>
 
 <script>
+const body = document.querySelector('body');
+const html = document.querySelector('html');
+
 export default {
   data() {
     return {
@@ -142,6 +145,16 @@ export default {
     const token = document.cookie.replace(/(?:(?:^|.*;\s*)hexToken\s*=\s*([^;]*).*$)|^.*$/, '$1');
     this.$http.defaults.headers.common.Authorization = token;
     this.checkLogin();
+  },
+  mounted() {
+    // 進入登入頁設定樣式
+    body.className = 'Login-body-style Login-body-center';
+    html.className = 'Login-body-center';
+  },
+  unmounted() {
+    // 離開時，移除樣式
+    body.className = '';
+    html.className = '';
   },
 };
 </script>
